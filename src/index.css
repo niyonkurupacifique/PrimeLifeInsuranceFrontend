@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* CSS for the initial state */
+.move-text {
+    position: fixed;
+    top: 50%;
+    left: -100%; /* Move text off-screen to the left */
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  /* CSS for the animated state */
+  .move-text.animate {
+    left: 50%; /* Move text to the center */
+  }
+  
